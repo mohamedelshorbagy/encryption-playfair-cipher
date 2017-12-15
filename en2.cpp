@@ -216,21 +216,24 @@ string key;
 cout << "Enter (en) for [Encryption] and Enter (de) for [Decryption]" << endl;
 getline(cin,mode);
 
+
+
+// For Decryption
 if(mode == "de") {
     cout << "Enter The Cipher Text : " << endl;
     getline(cin,text);
-    cout << "Enter the Key :" << endl;
+    cout << "Enter the Key : " << endl;
     getline(cin,key);
     string plainText = Decipher(text, key);
     cout << "Plain Text : " << plainText << endl;
 
-} else if(mode == "en") {
+} else if(mode == "en") { // For Encryption
     cout << "Enter The Plain Text : " << endl;
     getline(cin,text);
-    cout << "Enter the Key :" << endl;
+    cout << "Enter the Key : " << endl;
     getline(cin,key);
     string cipherText = Encipher(text, key);
-    cout << "Cipher Text :" << cipherText <<endl;
+    cout << "Cipher Text : " << cipherText <<endl;
 }
 
 
